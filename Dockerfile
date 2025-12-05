@@ -1,7 +1,8 @@
 FROM openlistteam/openlist:latest-lite-aria2
 
 USER root
-RUN mkdir -p /opt/openlist/data && chmod 777 /opt/openlist/data
-
-USER openlist
 WORKDIR /opt/openlist/data
+USER openlist
+VOLUME /opt/openlist/data/
+EXPOSE 5244 5245
+CMD [ "/entrypoint.sh" ]
