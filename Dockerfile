@@ -1,5 +1,4 @@
 FROM openlistteam/openlist:latest-lite-aria2
-USER openlist
 
 WORKDIR /opt/openlist/
 
