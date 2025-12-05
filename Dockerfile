@@ -1,6 +1,5 @@
 FROM tuthanika/openlist:latest-lite-aria2
 
-USER openlist
 WORKDIR /opt/openlist/
 
 # Ghi đè entrypoint.sh bằng bản đã sửa
